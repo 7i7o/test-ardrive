@@ -1,0 +1,23 @@
+{
+  "name": "test-ardrive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "run": "node dist/index.js",
+    "lint": "tsc"
+  },
+  "author": "7i7o",
+  "license": "ISC",
+  "dependencies": {
+    "ardrive-core-js": "^2.0.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}
